@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/mytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="编   辑"/>
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytitle"
+        android:hint="姓名"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editPho"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editname"
+        android:hint="电话"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/editcomf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPho"
+        android:layout_alignLeft="@+id/editPho"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:onClick="editcomf"
+        android:text="确认" />
+
+    <Button
+        android:id="@+id/editcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPho"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/editcomf"
+        android:onClick="editcancel"
+        android:text="取消" />
+
+</RelativeLayout>

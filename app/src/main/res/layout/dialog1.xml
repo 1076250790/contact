@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="name"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/name"
+        android:id="@+id/call"
+        android:onClick="call"
+        android:text="电话"
+        />
+    <Button
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/call"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="30dp"
+        android:text="短信"
+        android:id="@+id/imfo"
+        android:onClick="imfo"/>
+</RelativeLayout>
